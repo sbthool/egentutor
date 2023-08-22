@@ -13,32 +13,35 @@
             .courses-container-grid{        
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                column-gap: 25px;
+                column-gap: 35px;
                 row-gap: 40px;
-                margin-right: 200px;
-                margin-left: 200px;   
+                margin: auto;
+                width: 80%;      
             }  
-            @media (max-width: 1450px){
+            @media (max-width: 1280px){
                 .courses-container-grid{
-                    grid-template-columns: 1fr 1fr;
-                    margin-right: 250px;
-                    margin-left: 250px;
+                    grid-template-columns: 1fr 1fr;             
                 }
             } 
-            @media (max-width: 1250px){
+            @media (max-width: 1050px){
                 .courses-container-grid{
-                    grid-template-columns: 1fr;
-                    margin-right: 350px;
-                    margin-left: 350px;
+                    grid-template-columns: 1fr;     
                 }
             } 
             .course{
                 background-color: rgb(227, 252, 252);
-                border-width: 1px;
-                border-color:bisque;
+                border-width: 0.5px;
+                border-color:rgb(23, 143, 143);
                 border-style: solid;
                 box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.15);
-            }         
+                border-radius: 8px;
+                overflow: hidden;
+                cursor: pointer;
+            }  
+            .course:hover {
+               color:rgb(13, 92, 92);   
+               box-sizing: 2%;
+            }     
             p{
                 font-family: Arial;
                 margin-top: 0px;
@@ -62,28 +65,29 @@
             }
             .row-2-grid{
                 display: grid;
-                grid-template-columns: 0.6fr 1.3fr 1fr;
-                margin-bottom: 5px;    
-            }        
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-bottom: 5px;   
+                align-items: center;
+            }     
             .logo{
-                width: 100%; 
-                border-radius: 20px          
+                width: 50%; 
+                border-radius: 30px;  
+                margin-left: 2px;        
             }
             .author{
-                margin-top: 8px; 
                 font-size: 16px;  
-                text-align: right;               
+                text-align: center;                 
             }
             .amount{
-                margin-top: 8px; 
                 text-align: right;
                 color: rgb(67, 98, 98);
                 font-weight: bold;
+                margin-right: 5px;
             }
             .course-brief{
-                height: 6vw;
+                height: 8vw;
                 color: gray;
-                font-size: 12px;
+                font-size: 13px;
                 margin-top: 5px;
                 margin-left: 5px;
                 margin-right: 5px; 
@@ -121,7 +125,7 @@
                 color: rgb(19, 19, 19);
                 font-size: 40px;
                 margin-top: 80px;
-                margin-bottom: 5px;
+                margin-bottom: 0px;
             }
             .demo-video{
                 text-align: center;
@@ -130,7 +134,7 @@
     </head>
     <Body style="padding-bottom: 200px;">
         <div> 
-            <h3 class="courses-container-heading"> Our Favorite On-line Courses</h3>
+            <h3 class="courses-container-heading"> Learn with us...</h3>
         </div>
         <div class="courses-container-grid">
             <div class="course">    
@@ -147,7 +151,7 @@
                 </div>                
                 <div class="row-2-grid">
                     <div class="col-1">
-                        <img class="logo" src="thumbnails/logo.jpg">
+                        <img class="logo" src="thumbnails/logo1.jpg">
                     </div>
                     <div class="col-2">
                         <p class="author">
@@ -186,7 +190,7 @@
                 </div>                
                 <div class="row-2-grid">
                     <div class="col-1">
-                        <img class="logo" src="thumbnails/logo.jpg">
+                        <img class="logo" src="thumbnails/logo1.jpg">
                     </div>
                     <div class="col-2">
                         <p class="author">
@@ -225,7 +229,7 @@
                 </div>                
                 <div class="row-2-grid">
                     <div class="col-1">
-                        <img class="logo" src="thumbnails/logo.jpg">
+                        <img class="logo" src="thumbnails/logo1.jpg">
                     </div>
                     <div class="col-2">
                         <p class="author">
@@ -266,7 +270,7 @@
                 </div>                
                 <div class="row-2-grid">
                     <div class="col-1">
-                        <img class="logo" src="thumbnails/logo.jpg">
+                        <img class="logo" src="thumbnails/logo1.jpg">
                     </div>
                     <div class="col-2">
                         <p class="author">
@@ -305,7 +309,7 @@
                 </div>                
                 <div class="row-2-grid">
                     <div class="col-1">
-                        <img class="logo" src="thumbnails/logo.jpg">
+                        <img class="logo" src="thumbnails/logo1.jpg">
                     </div>
                     <div class="col-2">
                         <p class="author">
@@ -330,7 +334,7 @@
                 </div>    
             </div>
         </div>  
-            <h3 class="courses-demo-heading"> Watch A Demo Lecture ...</h3>
+            <h3 class="courses-demo-heading"> Watch A Demo Lecture...</h3>
         <div>
         
         <div class="demo-video">
